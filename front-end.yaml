@@ -18,7 +18,7 @@ spec:
         image: 10.197.17.180:5000/epochdemo/demo_frontend_image:test
         env:
         - name: test_time
-          value: "202103041118"
+          value: "202103171446"
         resources:
           requests:
             cpu: 100m
