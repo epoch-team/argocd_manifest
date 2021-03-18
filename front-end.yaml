@@ -15,7 +15,7 @@ spec:
       containers:
       - name: front-end
 #       image: weaveworksdemos/front-end:0.3.12
-        image: 10.197.17.180:5000/epochdemo/demo_frontend_image:1.0.0-03181759
+        image: 10.197.17.180:5000/epochdemo/demo_frontend_image:2.0.0-03181811
         env:
         - name: test_time
           value: "202103181447"
