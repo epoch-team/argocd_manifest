@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: front-end
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       name: front-end
@@ -18,7 +18,7 @@ spec:
         image: 10.197.17.180:5000/epochdemo/demo_frontend_image:2.0.0
         env:
         - name: test_time
-          value: "202103181446"
+          value: "202103181447"
         resources:
           requests:
             cpu: 100m
