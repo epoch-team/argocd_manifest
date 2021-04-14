@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: catalogue
-        image: image/catalogue:0.0.1
+        image: epoch/catalogue:1.0.2
         ports:
         - containerPort: 8000
       nodeSelector:
