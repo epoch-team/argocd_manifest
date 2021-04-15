@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: front-end
-        image: epoch/front-end:2.2.0
+        image: 10.197.17.180:5000/epochdemo/demo_frontend_image:2.0.0-03191039
         ports:
         - containerPort: 8000
       nodeSelector:
