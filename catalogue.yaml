@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: catalogue
+  name: front-end
   labels:
-    name: catalogue
+    name: front-end
 spec:
   replicas: 2
   selector:
     matchLabels:
-      name: catalogue
+      name: front-end
   template:
     metadata:
       labels:
-        name: catalogue
+        name: front-end
     spec:
       containers:
-      - name: catalogue
+      - name: front-end
         image: epoch/catalogue:1.0.2
         ports:
         - containerPort: 8000
@@ -26,13 +26,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: catalogue
+  name: front-end
   labels:
-    name: catalogue
+    name: front-end
 spec:
   ports:
     # the port that this service should serve on
   - port: 80
     targetPort: 8000
   selector:
-    name: catalogue
+    name: front-end
